@@ -103,6 +103,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        unbindService(mServiceConn);
+        super.onDestroy();
+    }
+
     class MyAdaptor extends BaseAdapter{
         List<Book> mBookList = new ArrayList<>();
         @Override

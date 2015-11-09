@@ -52,22 +52,4 @@ public class BookService extends Service {
         Log.d(TAG,"onBind");
         return mBinder;
     }
-
-    @Override
-    public boolean onUnbind(Intent intent) {
-        Log.d(TAG,"onUnbind");
-        return super.onUnbind(intent);
-    }
-
-    @Override
-    public void onRebind(Intent intent) {
-        Log.d(TAG,"onRebind");
-        super.onRebind(intent);
-    }
-
-    @Override
-    public void onDestroy() {
-        Log.d(TAG,"onDestroy");
-        super.onDestroy();
-    }
 }
